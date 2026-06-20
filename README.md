@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Webpack Static Site Starter Kit
 
 ## Project Requirements
@@ -122,3 +123,7 @@ yarn deploy
 ```
 
 Read [this article](hhttps://dev.to/anitaparmar26/webpack-5-guide-for-beginners-314c).
+=======
+# Final-web-core-8.5
+This is the final repository for the habsida project styling website
+>>>>>>> b75f73a78ddf1227248754843309776ffc9c0cae
