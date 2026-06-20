@@ -1,0 +1,31 @@
+.footer {
+  background: $color-white;
+  border-top: 1px solid $color-border;
+  padding: 24px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+
+  @media (min-width: $bp-tablet) {
+    padding: 24px;
+  }
+  @media (min-width: $bp-desktop) {
+    padding: 24px 40px;
+  }
+
+  &__copy,
+  &__disclaimer {
+    font-size: 13px;
+    color: $color-gray;
+  }
+
+  &__privacy {
+    font-size: 13px;
+    color: $color-gray;
+    text-decoration: underline;
+    &:hover {
+      color: $color-pink;
+    }
+  }
+}

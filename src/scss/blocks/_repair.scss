@@ -1,0 +1,117 @@
+.repair-types {
+  padding: 24px 16px;
+  background: $color-white;
+
+  @media (min-width: $bp-tablet) {
+    padding: 32px 24px;
+  }
+  @media (min-width: $bp-desktop) {
+    padding: 40px 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: $fw-bold;
+    color: $color-dark;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  // Slider — mobile/tablet
+  &__slider-wrap {
+    @media (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+  }
+  &__slide {
+    width: 250px !important;
+  }
+
+  // Grid — desktop
+  &__grid {
+    display: none;
+
+    @media (min-width: $bp-desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+  }
+
+  &__card {
+    background: $color-bg;
+    border-radius: $radius-lg;
+    padding: 24px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    transition: box-shadow $transition, transform $transition;
+
+    &:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: $fw-bold;
+    color: $color-dark;
+    line-height: 1.3;
+  }
+
+  // Arrow button (pink circle)
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color-pink;
+    align-self: flex-end;
+    transition: background $transition;
+
+    &:hover {
+      background: $color-pink;
+
+      .repair-types__arrow-icon {
+        border-color: $color-white;
+      }
+    }
+  }
+
+  &__arrow-icon {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid $color-pink;
+    border-top: 2px solid $color-pink;
+    transform: rotate(45deg) translateX(-2px);
+    transition: border-color $transition;
+  }
+
+  &__toggle {
+    display: none;
+
+    @media (min-width: $bp-desktop) {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 15px;
+      font-weight: $fw-medium;
+      color: $color-pink;
+      transition: color $transition;
+      &:hover {
+        color: $color-pink-dark;
+      }
+    }
+  }
+}

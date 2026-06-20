@@ -1,0 +1,121 @@
+.prices {
+  padding: 24px 16px;
+  background: $color-bg;
+
+  @media (min-width: $bp-tablet) {
+    padding: 32px 24px;
+  }
+  @media (min-width: $bp-desktop) {
+    padding: 40px 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: $fw-bold;
+    color: $color-dark;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  &__table-wrap {
+    overflow-x: auto;
+    background: $color-white;
+    border-radius: $radius-lg;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  &__table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+  }
+
+  &__thead {
+    background: $color-bg;
+  }
+
+  &__th {
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: $fw-medium;
+    color: $color-gray;
+    text-align: left;
+    border-bottom: 1px solid $color-border;
+    white-space: nowrap;
+  }
+
+  &__row {
+    transition: background $transition;
+    &:hover {
+      background: $color-bg;
+    }
+    &:not(:last-child) .prices__cell {
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  &__cell {
+    padding: 16px 20px;
+    font-size: 15px;
+    vertical-align: middle;
+
+    &--name {
+      font-weight: $fw-medium;
+      color: $color-dark;
+    }
+    &--price {
+      color: $color-dark;
+      white-space: nowrap;
+    }
+    &--time {
+      color: $color-gray;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    &--action {
+      text-align: right;
+    }
+  }
+
+  &__order {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: $color-pink;
+    color: $color-white;
+    font-family: $font;
+    font-size: 13px;
+    font-weight: $fw-medium;
+    border-radius: 100px;
+    transition: background $transition, transform $transition;
+
+    &:hover {
+      background: $color-pink-dark;
+      transform: translateY(-1px);
+    }
+  }
+
+  &__note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: $color-gray;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  &__proposal {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: $fw-medium;
+    color: $color-pink;
+    transition: color $transition;
+    &:hover {
+      color: $color-pink-dark;
+    }
+  }
+}

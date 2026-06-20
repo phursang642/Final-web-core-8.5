@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  height: $header-height;
+  background: $color-white;
+  border-bottom: 2px solid $color-border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  transition: box-shadow $transition;
+
+  &.is-scrolled {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: $bp-tablet) {
+    height: $header-height-tablet;
+    padding: 0 24px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: none;
+    height: $header-height-desktop;
+    left: $sidebar-width;
+    padding: 0 32px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: $radius;
+    transition: background $transition;
+    flex-shrink: 0;
+
+    &:hover {
+      background: $color-bg;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 28px;
+    width: auto;
+    @media (min-width: $bp-tablet) {
+      height: 36px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    @media (min-width: $bp-tablet) {
+      gap: 8px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: $radius;
+    transition: background $transition;
+
+    &:hover {
+      background: $color-bg;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--repair,
+    &--settings {
+      display: none;
+      @media (min-width: $bp-tablet) {
+        display: flex;
+      }
+    }
+  }
+}

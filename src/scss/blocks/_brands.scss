@@ -1,0 +1,112 @@
+.brands {
+  padding: 24px 16px;
+  background: $color-bg;
+
+  @media (min-width: $bp-tablet) {
+    padding: 32px 24px;
+  }
+  @media (min-width: $bp-desktop) {
+    padding: 40px 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: $fw-bold;
+    color: $color-dark;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  // Slider — mobile/tablet
+  &__slider-wrap {
+    @media (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+  }
+
+  &__slide {
+    width: auto !important;
+    img {
+      height: 56px;
+      width: auto;
+    }
+  }
+
+  &__pagination {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  // Grid — desktop
+  &__grid {
+    display: none;
+
+    @media (min-width: $bp-desktop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+  }
+
+  &__item {
+    background: $color-white;
+    border-radius: $radius-lg;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow $transition, transform $transition;
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    &--extra {
+      display: none;
+
+      .brands__grid.is-expanded & {
+        display: flex;
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+
+    @media (min-width: $bp-desktop) {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 15px;
+      font-weight: $fw-medium;
+      color: $color-pink;
+      transition: color $transition;
+
+      &:hover {
+        color: $color-pink-dark;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        transition: transform $transition;
+      }
+
+      &.is-expanded img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
