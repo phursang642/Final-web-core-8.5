@@ -16,13 +16,60 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    border-top: $color-light-green 1px solid;
   }
 
-  &__table-wrap {
-    overflow-x: auto;
+  // ── Mobile swiper ──────────────────────────
+  &__swiper {
+    display: block;
+    padding: 0 0 32px;
+
+    @media (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__card {
+    width: 260px !important;
+    min-height: 220px;
     background: $color-white;
+    border: 1px solid $color-border;
     border-radius: $radius-lg;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+
+    h4 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      color: $color-gray;
+      font-weight: $fw-medium;
+    }
+
+    p {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: $color-dark;
+    }
+  }
+
+  &__pagination {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  // ── Desktop table ──────────────────────────
+  &__table-wrap {
+    display: none;
+
+    @media (min-width: $bp-tablet) {
+      display: block;
+      overflow-x: auto;
+      background: $color-white;
+      border-radius: $radius-lg;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
   }
 
   &__table {
@@ -59,23 +106,6 @@
     padding: 16px 20px;
     font-size: 15px;
     vertical-align: middle;
-
-    &--name {
-      font-weight: $fw-medium;
-      color: $color-dark;
-    }
-    &--price {
-      color: $color-dark;
-      white-space: nowrap;
-    }
-    &--time {
-      color: $color-gray;
-      font-size: 14px;
-      white-space: nowrap;
-    }
-    &--action {
-      text-align: right;
-    }
   }
 
   &__order {
@@ -89,7 +119,14 @@
     font-size: 13px;
     font-weight: $fw-medium;
     border-radius: 100px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
     transition: background $transition, transform $transition;
+
+    @media (min-width: $bp-tablet) {
+      position: static; // reset for table
+    }
 
     &:hover {
       background: $color-pink-dark;
@@ -117,5 +154,11 @@
     &:hover {
       color: $color-pink-dark;
     }
+  }
+}
+// Force hide swiper on tablet and desktop
+@media (min-width: $bp-tablet) {
+  .prices__swiper {
+    display: none !important;
   }
 }

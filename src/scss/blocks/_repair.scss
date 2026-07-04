@@ -1,6 +1,6 @@
 .repair-types {
   padding: 24px 16px;
-  background: $color-white;
+  background: $color-bg;
 
   @media (min-width: $bp-tablet) {
     padding: 32px 24px;
@@ -16,10 +16,11 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    border-top: $color-light-green 1px solid;
   }
 
-  // Slider — mobile/tablet
   &__slider-wrap {
+    overflow: hidden;
     @media (min-width: $bp-desktop) {
       display: none;
     }
@@ -28,11 +29,12 @@
   &__swiper {
     overflow: hidden;
   }
+
   &__slide {
     width: 250px !important;
+    height: auto;
   }
 
-  // Grid — desktop
   &__grid {
     display: none;
 
@@ -44,13 +46,14 @@
   }
 
   &__card {
-    background: $color-bg;
+    background: $color-white; // ← was $color-bg, now white
+    border: 1px solid $color-border; // ← added border
     border-radius: $radius-lg;
     padding: 24px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 220px;
+    min-height: 160px; // ← reduced from 220px
     transition: box-shadow $transition, transform $transition;
 
     &:hover {
@@ -66,7 +69,6 @@
     line-height: 1.3;
   }
 
-  // Arrow button (pink circle)
   &__arrow {
     display: flex;
     align-items: center;
@@ -74,27 +76,18 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid $color-pink;
+
     align-self: flex-end;
     transition: background $transition;
 
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover {
       background: $color-pink;
-
-      .repair-types__arrow-icon {
-        border-color: $color-white;
-      }
     }
-  }
-
-  &__arrow-icon {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid $color-pink;
-    border-top: 2px solid $color-pink;
-    transform: rotate(45deg) translateX(-2px);
-    transition: border-color $transition;
   }
 
   &__toggle {

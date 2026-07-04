@@ -1,6 +1,6 @@
 .services {
   padding: 24px 16px;
-  background: $color-white;
+  background: $color-bg;
 
   @media (min-width: $bp-tablet) {
     padding: 32px 24px;
@@ -24,6 +24,8 @@
     font-size: 28px;
     font-weight: $fw-bold;
     color: $color-dark;
+    border-left: 3px solid $color-teal;
+    padding-left: 12px;
 
     @media (min-width: $bp-desktop) {
       font-size: 36px;
@@ -48,21 +50,22 @@
     transition: border-color $transition, background $transition;
 
     &:hover {
-      border-color: $color-pink;
-      background: rgba($color-pink, 0.05);
+      border-color: $color-teal;
+      background-color: $color-white;
     }
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 32px;
+      height: 32px;
     }
   }
 
   &__tabs {
     display: flex;
+    flex-wrap: nowrap;
     gap: 8px;
     overflow-x: auto;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     margin-bottom: 24px;
     scrollbar-width: none;
 
@@ -79,7 +82,7 @@
     flex-shrink: 0;
     padding: 8px 20px;
     border-radius: 100px;
-    border: 1.5px solid $color-border;
+    border: 1.5px solid transparent;
     font-size: 14px;
     font-weight: $fw-medium;
     color: $color-gray;
@@ -87,59 +90,61 @@
     transition: all $transition;
 
     &:hover {
-      border-color: $color-pink;
-      color: $color-pink;
+      border-color: $color-teal;
+      color: $color-gray;
+      background: color-white;
     }
 
     &--active {
-      background: $color-pink;
-      border-color: $color-pink;
-      color: $color-white;
+      border-color: $color-teal;
+      color: $color-dark;
+      background: $color-white;
     }
-  }
 
-  &__content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
 
-    @media (min-width: $bp-tablet) {
-      grid-template-columns: 1fr 1fr;
+      @media (min-width: $bp-tablet) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+    }
+
+    &__paragraph {
+      font-size: 15px;
+      color: $color-gray;
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+
+    &__read-more {
+      display: inline-flex;
       align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      font-size: 15px;
+      font-weight: $fw-medium;
+      color: $color-pink;
+      transition: gap $transition;
+
+      &:hover {
+        gap: 10px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
     }
-  }
 
-  &__paragraph {
-    font-size: 15px;
-    color: $color-gray;
-    line-height: 1.65;
-    margin-bottom: 12px;
-  }
-
-  &__read-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 8px;
-    font-size: 15px;
-    font-weight: $fw-medium;
-    color: $color-pink;
-    transition: gap $transition;
-
-    &:hover {
-      gap: 10px;
-    }
-    img {
-      width: 20px;
-      height: 20px;
-    }
-  }
-
-  &__image {
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: $radius-lg;
+    &__image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $radius-lg;
+      }
     }
   }
 }

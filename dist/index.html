@@ -8,20 +8,19 @@
   <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
   <body>
     <div class="layout">
-
       
       <div class="overlay"></div>
 
-      
       <aside class="sidebar">
         <div class="sidebar__top">
-          
-          
-          <img class="sidebar__logo" src="./img/image/Group.svg" alt="CPS logo">
-          <button class="sidebar__search">
-            <img src="./img/image/Search Icon Container.svg" alt="Search">
-          </button>
-        </div>
+  <button class="sidebar__close">
+    <img class="sidebar__close-icon" src="./img/Burger Icon.svg" alt="Close menu">
+  </button>
+  <img class="sidebar__logo" src="./img/image/Group.svg" alt="CPS logo">
+  <button class="sidebar__search">
+    <img src="./img/image/Search Icon Container.svg" alt="Search">
+  </button>
+</div>
 
         <nav class="sidebar__nav">
           <ul class="sidebar__list">
@@ -62,13 +61,14 @@
 
       
       <main class="main">
-
         
         <header class="header">
           <div class="header__left">
             <button class="header__burger">
-              <img src="./img/Burger Icon Container.svg" alt="Open menu">
-            </button>
+  <img class="burger-open" src="./img/Burger Icon Container.svg" alt="Open menu">
+  <img class="burger-close" src="./img/Burger Icon.svg" alt="Close menu">
+</button>
+<div class="header__divider"></div>
             <img class="header__logo" src="./img/Logo Group.svg" alt="CPS logo">
           </div>
 
@@ -93,7 +93,6 @@
 
         
         <section class="services">
-
           
           <div class="services__top">
             <h1 class="services__title">Services and support</h1>
@@ -123,8 +122,13 @@
 
           <div class="services__content">
             <div class="services__text">
-              <p class="services__paragraph">We are an authorized service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer's warranty.</p>
-              <p class="services__paragraph">We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of regular clients. We take pride in being recommended and in turn , being advised to family and friends.</p>
+              <p class="services__paragraph">We are an authorized service centre for Dell equipment repairs.
+                Only with us can you repair your Dell laptop with the official
+                manufacturer's warranty.</p>
+              <p class="services__paragraph">We have been successfully operating since 1992 and have earned
+                a reputation as a reliable partner, as evidenced by our large
+                number of regular clients. We take pride in being recommended
+                and in turn , being advised to family and friends.</p>
               <a href="#" class="services__read-more">
                 <img src="./img/Expand Icon Container.svg" alt="">
                 Read more
@@ -214,7 +218,7 @@
                   <div class="repair-types__card">
                     <span class="repair-types__name">Monitor repair</span>
                     <button class="repair-types__arrow">
-                        <img src="./img/Laptop Repair Icon.svg" alt="">
+                      <img src="./img/Laptop Repair Icon.svg" alt="">
                     </button>
                   </div>
                 </div>
@@ -249,6 +253,12 @@
                 <img src="./img/Laptop Repair Icon.svg" alt="">
               </button>
             </div>
+            <div class="repair-types__card">
+              <span class="repair-types__name">Printer repair</span>
+              <button class="repair-types__arrow">
+                <img src="./img/Laptop Repair Icon.svg" alt="">
+              </button>
+            </div>
           </div>
 
           <button class="repair-types__toggle">
@@ -258,67 +268,187 @@
         </section>
 
         
-        <section class="prices">
-          <h2 class="prices__title">Service prices</h2>
+<section class="prices">
+  <h2 class="prices__title">Service prices</h2>
 
-          <div class="prices__table-wrap">
-            <table class="prices__table">
-              <thead class="prices__thead">
-                <tr>
-                  <th class="prices__th">Repair services</th>
-                  <th class="prices__th">Price</th>
-                  <th class="prices__th">Deadline</th>
-                  <th class="prices__th"></th>
-                </tr>
-              </thead>
-              <tbody class="prices__tbody">
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Diagnostics</td>
-                  <td class="prices__cell prices__cell--price">Free of charge</td>
-                  <td class="prices__cell prices__cell--time">30 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Display replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Polyphonic speaker replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Testing with a technical report</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Software replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  
+  <div class="prices__table-wrap">
+    <table class="prices__table">
+      <thead class="prices__thead">
+        <tr>
+          <th class="prices__th">Repair services</th>
+          <th class="prices__th">Price</th>
+          <th class="prices__th">Deadline</th>
+          <th class="prices__th"></th>
+        </tr>
+      </thead>
 
-          <p class="prices__note">All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial proposal for ongoing maintenance, please submit a request.</p>
-          <a href="#" class="prices__proposal">Get a commercial proposal <img src="./img/arrow.svg" alt=""></a>
-        </section>
+      <tbody class="prices__tbody">
+        <tr class="prices__row">
+          <td class="prices__cell">Diagnostics</td>
+          <td class="prices__cell">Free of charge</td>
+          <td class="prices__cell">30 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="">
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Display replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="">
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Polyphonic speaker replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="">
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Testing with a technical report</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="">
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Software replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="">
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+  <div class="swiper prices__swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Diagnostics</p>
+
+        <h4>Price</h4>
+        <p>Free of charge</p>
+
+        <h4>Term</h4>
+        <p>30 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="">
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Display replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="">
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Polyphonic speaker replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="">
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Testing with a technical report</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="">
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Software replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="">
+        </button>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination prices__pagination"></div>
+  </div>
+
+  <p class="prices__note">
+    All prices include VAT. The cost of repair is indicated for a single
+    service. To receive a commercial proposal for ongoing maintenance,
+    please submit a request.
+  </p>
+
+  <a href="#" class="prices__proposal">
+    Get a commercial proposal
+    <img src="./img/arrow.svg" alt="">
+  </a>
+</section>
+
+                
 
         
         <footer class="footer">
@@ -326,7 +456,6 @@
           <a href="#" class="footer__privacy">Privacy policy</a>
           <p class="footer__disclaimer">The information presented on this page is not a public offer.</p>
         </footer>
-
       </main>
     </div>
   </body>

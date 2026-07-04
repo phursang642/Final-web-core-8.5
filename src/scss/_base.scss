@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $color-dark;
-  background: $color-white;
+  background: $color-bg;
   overflow-x: hidden;
 
   &.menu-open {
@@ -28,23 +28,25 @@ a {
   text-decoration: none;
   transition: color $transition;
 }
+
 button {
   cursor: pointer;
   border: none;
   background: none;
   font-family: $font;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-// Overlay
 .overlay {
   position: fixed;
   inset: 0;
@@ -60,7 +62,6 @@ img {
   }
 }
 
-// Layout wrapper
 .layout {
   display: flex;
   min-height: 100vh;
@@ -70,14 +71,9 @@ img {
   flex: 1;
   min-width: 0;
   background: $color-bg;
-  padding-top: $header-height;
-
-  @media (min-width: $bp-tablet) {
-    padding-top: $header-height-tablet;
-  }
 
   @media (min-width: $bp-desktop) {
-    padding-top: $header-height-desktop;
+    
     margin-left: $sidebar-width;
   }
 }

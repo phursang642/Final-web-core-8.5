@@ -7,24 +7,23 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><final layout></title>
+    <title><Final layout></title>
   </head>
   <body>
     <div class="layout">
-
       <!-- ===== NAV OVERLAY (dark background behind sidebar on mobile) ===== -->
       <div class="overlay"></div>
 
-      <!-- ===== SIDEBAR ===== -->
       <aside class="sidebar">
         <div class="sidebar__top">
-          
-          </button>
-          <img class="sidebar__logo" src="./img/image/Group.svg" alt="CPS logo">
-          <button class="sidebar__search">
-            <img src="./img/image/Search Icon Container.svg" alt="Search">
-          </button>
-        </div>
+  <button class="sidebar__close">
+    <img class="sidebar__close-icon" src="./img/Burger Icon.svg" alt="Close menu" />
+  </button>
+  <img class="sidebar__logo" src="./img/image/Group.svg" alt="CPS logo" />
+  <button class="sidebar__search">
+    <img src="./img/image/Search Icon Container.svg" alt="Search" />
+  </button>
+</div>
 
         <nav class="sidebar__nav">
           <ul class="sidebar__list">
@@ -65,38 +64,42 @@
 
       <!-- ===== MAIN CONTENT ===== -->
       <main class="main">
-
         <!-- ===== HEADER ===== -->
         <header class="header">
           <div class="header__left">
             <button class="header__burger">
-              <img src="./img/Burger Icon Container.svg" alt="Open menu">
-            </button>
-            <img class="header__logo" src="./img/Logo Group.svg" alt="CPS logo">
+  <img class="burger-open" src="./img/Burger Icon Container.svg" alt="Open menu" />
+  <img class="burger-close" src="./img/Burger Icon.svg" alt="Close menu" />
+</button>
+<div class="header__divider"></div>
+            <img
+              class="header__logo"
+              src="./img/Logo Group.svg"
+              alt="CPS logo"
+            />
           </div>
 
           <div class="header__right">
             <button class="header__icon header__icon--call">
-              <img src="./img/Call Icon Container.svg" alt="Call us">
+              <img src="./img/Call Icon Container.svg" alt="Call us" />
             </button>
             <button class="header__icon header__icon--chat">
-              <img src="./img/Chat Icon Container.svg" alt="Chat with us">
+              <img src="./img/Chat Icon Container.svg" alt="Chat with us" />
             </button>
             <button class="header__icon header__icon--profile">
-              <img src="./img/Profile Icon Container.svg" alt="Profile">
+              <img src="./img/Profile Icon Container.svg" alt="Profile" />
             </button>
             <button class="header__icon header__icon--repair">
-              <img src="./img/Repair Icon Container.svg" alt="Repair status">
+              <img src="./img/Repair Icon Container.svg" alt="Repair status" />
             </button>
             <button class="header__icon header__icon--settings">
-              <img src="./img/Check Status Icon Container.svg" alt="Settings">
+              <img src="./img/Check Status Icon Container.svg" alt="Settings" />
             </button>
           </div>
         </header>
 
         <!-- ===== SERVICES SECTION ===== -->
         <section class="services">
-
           <!-- for desktop -->
           <div class="services__top">
             <h1 class="services__title">Services and support</h1>
@@ -104,19 +107,21 @@
             <div class="services__actions">
               <button class="services__button">
                 <span>Submit a request</span>
-                <img src="./img/Repair Icon Container.svg" alt="">
+                <img src="./img/Repair Icon Container.svg" alt="" />
               </button>
 
               <button class="services__button">
                 <span>Repair status</span>
-                <img src="./img/Check Status Icon Container.svg" alt="">
+                <img src="./img/Check Status Icon Container.svg" alt="" />
               </button>
             </div>
           </div>
 
           <!-- for mobile and tablet -->
           <div class="services__tabs">
-            <button class="services__tab services__tab--active">Brands we repair</button>
+            <button class="services__tab services__tab--active"
+              >Brands we repair</button
+            >
             <button class="services__tab">Additional services</button>
             <button class="services__tab">Service prices</button>
             <button class="services__tab">Service center and addresses</button>
@@ -126,15 +131,24 @@
 
           <div class="services__content">
             <div class="services__text">
-              <p class="services__paragraph">We are an authorized service centre for Dell equipment repairs. Only with us can you repair your Dell laptop with the official manufacturer's warranty.</p>
-              <p class="services__paragraph">We have been successfully operating since 1992 and have earned a reputation as a reliable partner, as evidenced by our large number of regular clients. We take pride in being recommended and in turn , being advised to family and friends.</p>
+              <p class="services__paragraph"
+                >We are an authorized service centre for Dell equipment repairs.
+                Only with us can you repair your Dell laptop with the official
+                manufacturer's warranty.</p
+              >
+              <p class="services__paragraph"
+                >We have been successfully operating since 1992 and have earned
+                a reputation as a reliable partner, as evidenced by our large
+                number of regular clients. We take pride in being recommended
+                and in turn , being advised to family and friends.</p
+              >
               <a href="#" class="services__read-more">
-                <img src="./img/Expand Icon Container.svg" alt="">
+                <img src="./img/Expand Icon Container.svg" alt="" />
                 Read more
               </a>
             </div>
             <div class="services__image">
-              <img src="./img/Image Container.svg" alt="CPS service centre">
+              <img src="./img/Image Container.svg" alt="CPS service centre" />
             </div>
           </div>
         </section>
@@ -147,14 +161,30 @@
           <div class="brands__slider-wrap">
             <div class="swiper brands__swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide brands__slide"><img src="./img/logos/lenovo.svg" alt="Lenovo"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/samsung.svg" alt="Samsung"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/apple.svg" alt="Apple"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/viewsonic.svg" alt="ViewSonic"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/bosch.svg" alt="Bosch"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/hp.svg" alt="HP"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/acer.svg" alt="Acer"></div>
-                <div class="swiper-slide brands__slide"><img src="./img/logos/sony.svg" alt="Sony"></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/lenovo.svg" alt="Lenovo"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/samsung.svg" alt="Samsung"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/apple.svg" alt="Apple"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/viewsonic.svg" alt="ViewSonic"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/bosch.svg" alt="Bosch"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/hp.svg" alt="HP"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/acer.svg" alt="Acer"
+                /></div>
+                <div class="swiper-slide brands__slide"
+                  ><img src="./img/logos/sony.svg" alt="Sony"
+                /></div>
               </div>
               <div class="swiper-pagination brands__pagination"></div>
             </div>
@@ -162,28 +192,52 @@
 
           <!-- grid for desktop -->
           <div class="brands__grid">
-            <div class="brands__item"><img src="./img/logos/lenovo.svg" alt="Lenovo"></div>
-            <div class="brands__item"><img src="./img/logos/samsung.svg" alt="Samsung"></div>
-            <div class="brands__item"><img src="./img/logos/apple.svg" alt="Apple"></div>
-            <div class="brands__item"><img src="./img/logos/viewsonic.svg" alt="ViewSonic"></div>
-            <div class="brands__item"><img src="./img/logos/bosch.svg" alt="Bosch"></div>
-            <div class="brands__item"><img src="./img/logos/hp.svg" alt="HP"></div>
-            <div class="brands__item"><img src="./img/logos/acer.svg" alt="Acer"></div>
-            <div class="brands__item"><img src="./img/logos/sony.svg" alt="Sony"></div>
-            <div class="brands__item brands__item--extra"><img src="./img/logos/lenovo.svg" alt="Lenovo"></div>
-            <div class="brands__item brands__item--extra"><img src="./img/logos/samsung.svg" alt="Samsung"></div>
-            <div class="brands__item brands__item--extra"><img src="./img/logos/apple.svg" alt="Apple"></div>
+            <div class="brands__item"
+              ><img src="./img/logos/lenovo.svg" alt="Lenovo"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/samsung.svg" alt="Samsung"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/apple.svg" alt="Apple"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/viewsonic.svg" alt="ViewSonic"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/bosch.svg" alt="Bosch"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/hp.svg" alt="HP"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/acer.svg" alt="Acer"
+            /></div>
+            <div class="brands__item"
+              ><img src="./img/logos/sony.svg" alt="Sony"
+            /></div>
+            <div class="brands__item brands__item--extra"
+              ><img src="./img/logos/lenovo.svg" alt="Lenovo"
+            /></div>
+            <div class="brands__item brands__item--extra"
+              ><img src="./img/logos/samsung.svg" alt="Samsung"
+            /></div>
+            <div class="brands__item brands__item--extra"
+              ><img src="./img/logos/apple.svg" alt="Apple"
+            /></div>
           </div>
 
           <button class="brands__toggle">
             <span>Show all</span>
-            <img src="./img/Expand Icon Container.svg" alt="">
+            <img src="./img/Expand Icon Container.svg" alt="" />
           </button>
         </section>
 
         <!-- ===== REPAIR TYPES SECTION ===== -->
         <section class="repair-types">
-          <h2 class="repair-types__title">Repair of various types of equipment</h2>
+          <h2 class="repair-types__title"
+            >Repair of various types of equipment</h2
+          >
 
           <!-- swiper for mobile/tablet only -->
           <div class="repair-types__slider-wrap">
@@ -193,7 +247,7 @@
                   <div class="repair-types__card">
                     <span class="repair-types__name">Laptop repair</span>
                     <button class="repair-types__arrow">
-                      <img src="./img/Laptop Repair Icon.svg" alt="">
+                      <img src="./img/Laptop Repair Icon.svg" alt="" />
                     </button>
                   </div>
                 </div>
@@ -201,7 +255,7 @@
                   <div class="repair-types__card">
                     <span class="repair-types__name">Tablet repair</span>
                     <button class="repair-types__arrow">
-                      <img src="./img/Laptop Repair Icon.svg" alt="">
+                      <img src="./img/Laptop Repair Icon.svg" alt="" />
                     </button>
                   </div>
                 </div>
@@ -209,7 +263,7 @@
                   <div class="repair-types__card">
                     <span class="repair-types__name">PC repair</span>
                     <button class="repair-types__arrow">
-                      <img src="./img/Laptop Repair Icon.svg" alt="">
+                      <img src="./img/Laptop Repair Icon.svg" alt="" />
                     </button>
                   </div>
                 </div>
@@ -217,7 +271,7 @@
                   <div class="repair-types__card">
                     <span class="repair-types__name">Monitor repair</span>
                     <button class="repair-types__arrow">
-                        <img src="./img/Laptop Repair Icon.svg" alt="">
+                      <img src="./img/Laptop Repair Icon.svg" alt="" />
                     </button>
                   </div>
                 </div>
@@ -231,105 +285,234 @@
             <div class="repair-types__card">
               <span class="repair-types__name">Laptop repair</span>
               <button class="repair-types__arrow">
-                <img src="./img/Laptop Repair Icon.svg" alt="">
+                <img src="./img/Laptop Repair Icon.svg" alt="" />
               </button>
             </div>
             <div class="repair-types__card">
               <span class="repair-types__name">Tablet repair</span>
               <button class="repair-types__arrow">
-                <img src="./img/Laptop Repair Icon.svg" alt="">
+                <img src="./img/Laptop Repair Icon.svg" alt="" />
               </button>
             </div>
             <div class="repair-types__card">
               <span class="repair-types__name">PC repair</span>
               <button class="repair-types__arrow">
-                <img src="./img/Laptop Repair Icon.svg" alt="">
+                <img src="./img/Laptop Repair Icon.svg" alt="" />
               </button>
             </div>
             <div class="repair-types__card">
               <span class="repair-types__name">Monitor repair</span>
               <button class="repair-types__arrow">
-                <img src="./img/Laptop Repair Icon.svg" alt="">
+                <img src="./img/Laptop Repair Icon.svg" alt="" />
+              </button>
+            </div>
+            <div class="repair-types__card">
+              <span class="repair-types__name">Printer repair</span>
+              <button class="repair-types__arrow">
+                <img src="./img/Laptop Repair Icon.svg" alt="" />
               </button>
             </div>
           </div>
 
           <button class="repair-types__toggle">
             <span>Show all</span>
-            <img src="./img/Expand Icon Container.svg" alt="">
+            <img src="./img/Expand Icon Container.svg" alt="" />
           </button>
         </section>
 
         <!-- ===== SERVICE PRICES SECTION ===== -->
-        <section class="prices">
-          <h2 class="prices__title">Service prices</h2>
+<section class="prices">
+  <h2 class="prices__title">Service prices</h2>
 
-          <div class="prices__table-wrap">
-            <table class="prices__table">
-              <thead class="prices__thead">
-                <tr>
-                  <th class="prices__th">Repair services</th>
-                  <th class="prices__th">Price</th>
-                  <th class="prices__th">Deadline</th>
-                  <th class="prices__th"></th>
-                </tr>
-              </thead>
-              <tbody class="prices__tbody">
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Diagnostics</td>
-                  <td class="prices__cell prices__cell--price">Free of charge</td>
-                  <td class="prices__cell prices__cell--time">30 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Display replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Polyphonic speaker replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Testing with a technical report</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-                <tr class="prices__row">
-                  <td class="prices__cell prices__cell--name">Software replacement</td>
-                  <td class="prices__cell prices__cell--price">1,000 ₽</td>
-                  <td class="prices__cell prices__cell--time">30-120 min</td>
-                  <td class="prices__cell prices__cell--action">
-                    <button class="prices__order">Order <img src="./img/arrow.svg" alt=""></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <!-- Desktop / Tablet Table -->
+  <div class="prices__table-wrap">
+    <table class="prices__table">
+      <thead class="prices__thead">
+        <tr>
+          <th class="prices__th">Repair services</th>
+          <th class="prices__th">Price</th>
+          <th class="prices__th">Deadline</th>
+          <th class="prices__th"></th>
+        </tr>
+      </thead>
 
-          <p class="prices__note">All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial proposal for ongoing maintenance, please submit a request.</p>
-          <a href="#" class="prices__proposal">Get a commercial proposal <img src="./img/arrow.svg" alt=""></a>
-        </section>
+      <tbody class="prices__tbody">
+        <tr class="prices__row">
+          <td class="prices__cell">Diagnostics</td>
+          <td class="prices__cell">Free of charge</td>
+          <td class="prices__cell">30 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Display replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Polyphonic speaker replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Testing with a technical report</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+
+        <tr class="prices__row">
+          <td class="prices__cell">Software replacement</td>
+          <td class="prices__cell">1,000 ₽</td>
+          <td class="prices__cell">30–120 min</td>
+          <td class="prices__cell">
+            <button class="prices__order">
+              Order
+              <img src="./img/arrow.svg" alt="" />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile Swiper -->
+  <div class="swiper prices__swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Diagnostics</p>
+
+        <h4>Price</h4>
+        <p>Free of charge</p>
+
+        <h4>Term</h4>
+        <p>30 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Display replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Polyphonic speaker replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Testing with a technical report</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="swiper-slide prices__card">
+        <h4>Repair services</h4>
+        <p>Software replacement</p>
+
+        <h4>Price</h4>
+        <p>1,000 ₽</p>
+
+        <h4>Term</h4>
+        <p>30–120 min</p>
+
+        <button class="prices__order">
+          Order
+          <img src="./img/arrow.svg" alt="" />
+        </button>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination prices__pagination"></div>
+  </div>
+
+  <p class="prices__note">
+    All prices include VAT. The cost of repair is indicated for a single
+    service. To receive a commercial proposal for ongoing maintenance,
+    please submit a request.
+  </p>
+
+  <a href="#" class="prices__proposal">
+    Get a commercial proposal
+    <img src="./img/arrow.svg" alt="" />
+  </a>
+</section>
+
+                
 
         <!-- ===== FOOTER ===== -->
         <footer class="footer">
-          <p class="footer__copy">© 2019 CPS. Developed by the Apexsing team.</p>
+          <p class="footer__copy"
+            >© 2019 CPS. Developed by the Apexsing team.</p
+          >
           <a href="#" class="footer__privacy">Privacy policy</a>
-          <p class="footer__disclaimer">The information presented on this page is not a public offer.</p>
+          <p class="footer__disclaimer"
+            >The information presented on this page is not a public offer.</p
+          >
         </footer>
-
       </main>
     </div>
   </body>

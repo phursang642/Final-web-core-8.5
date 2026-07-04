@@ -7,3 +7,19 @@
 @import 'blocks/repair';
 @import 'blocks/prices';
 @import 'blocks/footer';
+// Swiper overrides
+.swiper {
+  overflow: hidden !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-pink !important;
+}
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.swiper {
+  overflow: hidden !important;
+}

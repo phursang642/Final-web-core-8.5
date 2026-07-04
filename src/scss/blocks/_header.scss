@@ -1,12 +1,11 @@
 .header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 200;
+  z-index: 100;
   height: $header-height;
-  background: $color-white;
-  border-bottom: 2px solid $color-border;
+  background: $color-bg;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,9 +23,6 @@
 
   @media (min-width: $bp-desktop) {
     display: none;
-    height: $header-height-desktop;
-    left: $sidebar-width;
-    padding: 0 32px;
   }
 
   &__left {
@@ -50,20 +46,19 @@
     }
 
     img {
-      width: 24px;
-      height: 24px;
-    }
-
-    @media (min-width: $bp-desktop) {
-      display: none;
+      width: 40px;
+      height: 40px;
     }
   }
 
-  &__logo {
-    height: 28px;
-    width: auto;
+  &__divider {
+    display: none;
+
     @media (min-width: $bp-tablet) {
-      height: 36px;
+      display: block;
+      width: 2px;
+      height: 32px;
+      background: $color-border;
     }
   }
 
@@ -71,6 +66,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
+
     @media (min-width: $bp-tablet) {
       gap: 8px;
     }
@@ -88,17 +84,44 @@
     &:hover {
       background: $color-bg;
     }
+
     img {
       width: 40px;
       height: 40px;
     }
 
-    &--repair,
-    &--settings {
+    &--call,
+    &--chat,
+    &--profile {
       display: none;
+
       @media (min-width: $bp-tablet) {
         display: flex;
       }
     }
+
+    &--repair,
+    &--settings {
+      display: flex;
+    }
+
+    &--repair {
+      border-left: 2px solid $color-border;
+      padding-left: 8px;
+      margin-left: 4px;
+    }
+  }
+}
+
+.burger-close {
+  display: none;
+}
+
+.menu-open {
+  .burger-open {
+    display: none;
+  }
+  .burger-close {
+    display: block;
   }
 }

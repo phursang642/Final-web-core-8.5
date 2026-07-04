@@ -20,6 +20,7 @@
 
   // Slider — mobile/tablet
   &__slider-wrap {
+    overflow: hidden;
     @media (min-width: $bp-desktop) {
       display: none;
     }
@@ -30,7 +31,8 @@
   }
 
   &__slide {
-    width: auto !important;
+    width: 160px !important;
+    flex-shrink: 0;
     img {
       height: 56px;
       width: auto;
@@ -82,31 +84,31 @@
   }
 
   &__toggle {
-    display: none;
+  display: none;  // ← hidden on mobile
 
-    @media (min-width: $bp-desktop) {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 16px;
-      font-size: 15px;
-      font-weight: $fw-medium;
-      color: $color-pink;
-      transition: color $transition;
+  @media (min-width: $bp-tablet) {
+    display: inline-flex;  // ← show on tablet+
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: $fw-medium;
+    color: $color-pink;
+    transition: color $transition;
 
-      &:hover {
-        color: $color-pink-dark;
-      }
+    &:hover {
+      color: $color-pink-dark;
+    }
 
-      img {
-        width: 16px;
-        height: 16px;
-        transition: transform $transition;
-      }
+    img {
+      width: 16px;
+      height: 16px;
+      transition: transform $transition;
+    }
 
-      &.is-expanded img {
-        transform: rotate(180deg);
-      }
+    &.is-expanded img {
+      transform: rotate(180deg);
     }
   }
+}
 }
