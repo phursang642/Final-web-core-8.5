@@ -54,10 +54,7 @@
     }
   }
 
-  &__pagination {
-    margin-top: 16px;
-    text-align: center;
-  }
+  
 
   // ── Desktop table ──────────────────────────
   &__table-wrap {
@@ -161,4 +158,11 @@
   .prices__swiper {
     display: none !important;
   }
+}
+.prices__swiper {
+  padding-bottom: 32px !important;
+}
+
+.prices__pagination {
+  bottom: 0 !important;
 }

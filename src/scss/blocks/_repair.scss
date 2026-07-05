@@ -108,3 +108,29 @@
     }
   }
 }
+.repair-types__grid {
+  display: none;
+
+  @media (min-width: $bp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    // Hide cards after the 4th
+    .repair-types__card:nth-child(n + 5) {
+      display: none;
+    }
+
+    // Show all cards when expanded
+    &.is-expanded {
+      .repair-types__card {
+        display: flex;
+      }
+    }
+  }
+}
+
+.repair-types .swiper-pagination {
+  position: relative;
+  margin-top: 15px; // Move the dots lower
+}

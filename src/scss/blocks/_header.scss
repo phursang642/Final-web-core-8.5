@@ -23,6 +23,7 @@
 
   @media (min-width: $bp-desktop) {
     display: none;
+    pointer-events: none;
   }
 
   &__left {
@@ -40,10 +41,6 @@
     border-radius: $radius;
     transition: background $transition;
     flex-shrink: 0;
-
-    &:hover {
-      background: $color-bg;
-    }
 
     img {
       width: 40px;
@@ -124,4 +121,10 @@
   .burger-close {
     display: block;
   }
+}
+.header__icon--repair {
+  width: 50px;
+}
+button.services__button {
+  border: none;
 }

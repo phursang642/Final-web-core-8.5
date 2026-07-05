@@ -18,21 +18,23 @@
     letter-spacing: 0.04em;
   }
 
-  // Slider — mobile/tablet
   &__slider-wrap {
     overflow: hidden;
-    @media (min-width: $bp-desktop) {
+
+    @media (min-width: $bp-tablet) {
       display: none;
     }
   }
 
   &__swiper {
     overflow: hidden;
+    padding-bottom: 32px !important;
   }
 
   &__slide {
     width: 160px !important;
     flex-shrink: 0;
+
     img {
       height: 56px;
       width: auto;
@@ -40,20 +42,47 @@
   }
 
   &__pagination {
-    margin-top: 12px;
+    bottom: 0 !important;
     text-align: center;
+
+    @media (min-width: $bp-tablet) {
+      display: none !important;
+    }
   }
 
-  // Grid — desktop
   &__grid {
     display: none;
 
-    @media (min-width: $bp-desktop) {
+    @media (min-width: $bp-tablet) {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 12px;
+
+      .brands__item {
+        display: flex;
+      }
+      .brands__item:nth-child(n + 7) {
+        display: none;
+      }
+      &.is-expanded .brands__item:nth-child(n + 7) {
+        display: flex;
+      }
     }
-  }
+
+    @media (min-width: $bp-desktop) {
+      grid-template-columns: repeat(4, 1fr);
+
+      .brands__item {
+        display: flex !important;
+      }
+      .brands__item:nth-child(n + 9) {
+        display: none !important;
+      }
+      &.is-expanded .brands__item:nth-child(n + 9) {
+        display: flex !important;
+      }
+    }  // ← closing } for desktop media query
+  }  // ← closing } for &__grid
 
   &__item {
     background: $color-white;
@@ -73,31 +102,24 @@
       max-height: 40px;
       width: auto;
     }
-
-    &--extra {
-      display: none;
-
-      .brands__grid.is-expanded & {
-        display: flex;
-      }
-    }
   }
 
   &__toggle {
-  display: none;  // ← hidden on mobile
+    display: none;
 
-  @media (min-width: $bp-tablet) {
-    display: inline-flex;  // ← show on tablet+
-    align-items: center;
-    gap: 6px;
-    margin-top: 16px;
-    font-size: 15px;
-    font-weight: $fw-medium;
-    color: $color-pink;
-    transition: color $transition;
+    @media (min-width: $bp-tablet) {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 15px;
+      font-weight: $fw-medium;
+      color: $color-pink;
+      transition: color $transition;
 
-    &:hover {
-      color: $color-pink-dark;
+      &:hover {
+        color: $color-pink-dark;
+      }
     }
 
     img {
@@ -110,5 +132,4 @@
       transform: rotate(180deg);
     }
   }
-}
 }

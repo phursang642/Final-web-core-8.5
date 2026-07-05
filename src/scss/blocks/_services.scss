@@ -45,18 +45,13 @@
     border: 1.5px solid $color-border;
     border-radius: 100px;
     font-size: 14px;
-    font-weight: $fw-medium;
+    font-weight: $fw-bold;
     color: $color-dark;
     transition: border-color $transition, background $transition;
 
-    &:hover {
-      border-color: $color-teal;
-      background-color: $color-white;
-    }
-
     img {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -146,5 +141,21 @@
         border-radius: $radius-lg;
       }
     }
+  }
+}
+
+.services__read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-direction: row-reverse;
+
+  &:hover {
+    gap: 10px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
   }
 }
